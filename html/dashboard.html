@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bubble Chart Template</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bubble_chart.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oldenburg' rel='stylesheet' type='text/css'>
+    <link href="css/inline-list.css" rel="stylesheet">
+
+    <script src="src/dashboard_parameters.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="report_title"></h1>
+        <nav>
+          <ul class="nav">
+            <li><a href="intro.html">Home</a></li>
+            <li><a href="bubblehome.html">Definiton & Sizing</a></li>
+            <li><a href="exRadar.html">Prioritization</a></li>
+            <li><a class="current" href="dashboard.html">Emotion Mapping</a></li>
+
+          </ul>
+        </nav>
+      </header>
+      <div id="canvas">
+        <div id="chart">
+            <select id="inds">
+              <option value=0 selected="selected">Wellness Retreat</option>
+              <option value=1>Family and Friends</option>
+              <option value=2>Broadening Horizons</option>
+              <option value=3>Cultural Immersion</option>
+              <option value=4>Escape the Cold</option>
+              <option value=5>Insta-Worthy</option>
+              <option value=6>Partier</option>
+              <option value=7>Relaxation Getaway</option>
+              <option value=8>Event Goers</option>
+              <option value=9>Be Spontaneous</option> 
+              <option value=10>Outdoor Adventure</option> 
+              <option value=11>Extend Stay</option>                                          
+              <option value=12>Luxury Upgrade</option> 
+              <option value=13>Sightseeing</option> 
+              <option value=14>High Tech</option> 
+              <option value=15>Veteran</option> 
+              <option value=16>Road Weary</option> 
+            </select>
+
+            <div class="radarChart"></div>
+            <div id="filler"></div>
+
+        </div>
+
+        <div id="bubbles">
+              <div id="toolbar"></div>
+              <div id="vis"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="http://d3-legend.susielu.com/d3-legend.min.js"></script>
+
+    <script src="src/tooltip.js"></script>
+    <script src="src/dashboard_bubble.js"></script>
+    <!-- <script src="src/radarChart.js"></script>  -->
+    <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script>   -->
+
+  </body>
+</html>

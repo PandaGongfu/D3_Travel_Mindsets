@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bubble Chart Template</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bubble_chart.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oldenburg' rel='stylesheet' type='text/css'>
+    <link href="css/inline-list.css" rel="stylesheet">
+
+    <script src="src/dashboard_parameters.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header>
+        <h1 id="report_title"></h1>
+        <nav>
+          <ul class="nav">
+            <li><a href="intro.html">Home</a></li>
+            <li><a href="bubblehome.html">Definiton & Sizing</a></li>
+            <li><a class="current" href="exRadar.html">Prioritization</a></li>
+            <li><a href="dashboard.html">Emotion Mapping</a></li>
+
+          </ul>
+        </nav>
+      </header>
+      <div id="canvas">
+        <div id="chart">
+
+        </div>
+
+        <div id="bubbles">
+              <div id="toolbar"></div>
+              <div id="vis"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="http://d3-legend.susielu.com/d3-legend.min.js"></script>
+
+    <script src="src/tooltip.js"></script>
+    <script src="src/exRadar.js"></script>
+
+  </body>
+</html>

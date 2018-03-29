@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sequences sunburst</title>
+    <script src="//d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="src/contents.js"></script>
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merienda One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oldenburg' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/sequences.css"/>
+    <link rel="stylesheet" href="css/inline-list.css" >
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>International Travelers - Content Journey Mapping</h1>
+        <nav>
+          <ul class="nav">
+            <li><a href="intro.html">Home</a></li> 
+            <li><a href="pathing.html">Pathing</a></li>
+            <li><a class="current" href="image.html">Imagery</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="social.html">Social</a></li> 
+          </ul>
+        </nav>
+      </header>
+
+      <div id="filler_small"></div>
+      <div id="filler">
+            <select id="inds">
+              <option value=0 selected="selected">Family and Friends</option>
+              <option value=1>Wellness Retreat</option>
+              <option value=2>Broadening Horizons</option>
+              <option value=3>Cultural Immersion</option>
+              <option value=4>Escape the Cold</option>
+              <option value=5>Insta-Worthy</option>
+              <option value=6>Partier</option>
+              <option value=7>Relaxation Getaway</option>
+              <option value=8>Event Goers</option>
+              <option value=9>Be Spontaneous</option> 
+              <option value=10>Outdoor Adventure</option> 
+            </select>
+      </div>
+
+      <section id="row"> 
+          <div id="chart">
+            <div id="explanation" style="visibility: hidden;">
+              <span id="percentage"></span><br/>           
+            </div>
+          </div>
+
+        <div id="pathing">
+          <div id="curve"></div>
+        </div>
+
+      </section>
+    </div>
+
+    <script type="text/javascript" src="src/image.js"></script>
+    <script type="text/javascript">
+  </script> 
+  </body>
+</html>
